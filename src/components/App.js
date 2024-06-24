@@ -64,10 +64,10 @@ const App = () =>{
  
         return(
             <div id="main">
-                <input value={name1} onChange={(e) => setName1(e.target.value)} data-testid="input1"/>
-                <input value={name2} onChange={(e) => setName2(e.target.value)} data-testid="input2"/>
-                <button onClick={calculateRelationShip}>Calculate RelationShip Future</button>
-                <button onClick={ClearState}>Clear</button>
+                <input type="text" value={name1} onChange={(e) => setName1(e.target.value)} data-testid="input1" placeholder="Enter first name" name="name1"/>
+                <input type="text" value={name2} onChange={(e) => setName2(e.target.value)} data-testid="input2" placeholder="Enter Second name" name="name2"/>
+                <button onClick={calculateRelationShip} data-testid="calculate_relationship">Calculate RelationShip Future</button>
+                <button onClick={ClearState} data-testid="clear">Clear</button>
                 <h3 data-testid="answer" >{output}</h3>
             </div>
         )
